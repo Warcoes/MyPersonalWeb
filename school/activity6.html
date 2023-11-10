@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>java script</title>
+</head>
+<body>
+
+<h1>1 + 1 = ?</h1>
+<input type="number" id="answer" />
+<button onclick="checkAnswer()">Check answer</button>
+<p id="result"></p>
+
+<script>
+function checkAnswer() {
+  // Get the user's answer
+  var answer = document.getElementById("answer").value;
+
+  // Check if the answer is correct
+  if (answer == 2) {
+    // Display the "Correct!" message
+    document.getElementById("result").innerHTML = "Correct!";
+  } else {
+    // Display the "Incorrect!" message
+    document.getElementById("result").innerHTML = "Incorrect!";
+  }
+}
+</script>
